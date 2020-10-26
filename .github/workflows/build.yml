@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        run: GOOS=${{matrix.os}} GOARCH=${{matrix.arch} go build -v .
+        run: GOOS=${{matrix.os}} GOARCH=${{matrix.arch}} go build -v .
 
       - name: Upload ${{matrix.configuration}} binaries
         uses: actions/upload-artifact@v2
