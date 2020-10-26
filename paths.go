@@ -3,6 +3,8 @@ package main
 var (
 	requiredFiles = []string{
 		"main/fileSysCheck.cfg",
+		"zone/mp_*.ff",
+		"zone/*_mp.ff",
 		"zone/**/mp_*.ff",
 		"zone/**/*_mp.ff",
 		"iw6mp64_ship.exe",
