@@ -1,0 +1,6 @@
+test/
+*.so
+*.a
+*.dll
+*.exe
+iw6x-zero
