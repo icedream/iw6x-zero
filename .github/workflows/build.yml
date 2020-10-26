@@ -32,10 +32,10 @@ jobs:
       - name: Build
         run: GOOS=${{matrix.os}} GOARCH=${{matrix.arch}} go build -v .
 
-      - name: Upload ${{matrix.configuration}} binaries
+      - name: Upload ${{matrix.os}} ${{matrix.arch}} binaries
         uses: actions/upload-artifact@v2
         with:
-          name: ${{matrix.configuration}} binaries
+          name: ${{matrix.os}} ${{matrix.arch} binaries
           path: |
             iw6x-zero.*
 
